@@ -51,21 +51,15 @@ renderer.setAnimationLoop(animate); */
 const scene = new THREE.Scene();
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-
 scene.add(ambientLight);
 
 const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-
-
 directionalLight.position.set(200, 500, 300);
-
 scene.add(directionalLight);
 
 // Setting up camera
 const aspectRatio = window.innerWidth / window.innerHeight;
-
 const cameraWidth = 150;
-
 const cameraHeight = cameraWidth / aspectRatio;
 
 const camera = new THREE.OrthographicCamera(
